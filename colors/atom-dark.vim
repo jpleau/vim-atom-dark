@@ -57,10 +57,10 @@ hi MoreMsg         guifg=#A8FF60
 hi Operator        guifg=#92C5F7
 
 " complete menu
-hi Pmenu           guifg=#66D9EF guibg=#000000
-hi PmenuSel                      guibg=#808080
-hi PmenuSbar                     guibg=#080808
-hi PmenuThumb      guifg=#66D9EF
+hi Pmenu           guifg=#808080 guibg=#ffffff
+hi PmenuSel        guifg=#ffffff guibg=#3A4471
+hi PmenuSbar       guibg=#3A4471
+hi PmenuThumb      guifg=#ffff00
 
 hi PreCondit       guifg=#DAD085               gui=none
 hi PreProc         guifg=#DAD085
@@ -79,8 +79,8 @@ if has("spell")
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
 hi Statement       guifg=#92C5F7               gui=none
-hi StatusLine      guifg=#455354 guibg=fg      gui=none
-hi StatusLineNC    guifg=#808080 guibg=#080808
+hi StatusLine      guifg=#455354 guibg=#ffffff      gui=none
+hi StatusLineNC    guifg=#ffffff guibg=#455354
 hi StorageClass    guifg=#B6B7EB               gui=none
 hi Structure       guifg=#66D9EF
 hi Tag             guifg=#92C5F7               gui=none
