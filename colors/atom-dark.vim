@@ -44,7 +44,7 @@ hi Folded          guifg=#465457 guibg=#000000
 hi Function        guifg=#DAD085
 hi Identifier      guifg=#B6B7EB
 hi Ignore          guifg=#808080 guibg=bg
-hi IncSearch       guifg=#C4BE89 guibg=#000000
+hi IncSearch       guifg=#C4BE89 guibg=#000000 cterm=none
 
 hi Keyword         guifg=#92C5F7               gui=none
 hi Label           guifg=#A8FF60               gui=none
@@ -79,8 +79,8 @@ if has("spell")
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
 hi Statement       guifg=#92C5F7               gui=none
-hi StatusLine      guifg=#455354 guibg=#ffffff      gui=none
-hi StatusLineNC    guifg=#ffffff guibg=#455354
+hi StatusLine      guifg=#455354 guibg=#ffffff gui=none cterm=none
+hi StatusLineNC    guifg=#ffffff guibg=#455354 cterm=none
 hi StorageClass    guifg=#B6B7EB               gui=none
 hi Structure       guifg=#66D9EF
 hi Tag             guifg=#92C5F7               gui=none
@@ -97,18 +97,27 @@ hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333
 hi WildMenu        guifg=#66D9EF guibg=#000000
 
-hi TabLineFill     guifg=#1D1F21 guibg=#1D1F21
-hi TabLine         guibg=#1D1F21 guifg=#808080 gui=none
+hi TabLineFill     guifg=#ffffff guibg=#ffffff
+hi TabLine         ctermbg=none guifg=#ffffff cterm=bold 
+"hi TabLine         guibg=#1D1F21 guifg=#808080 cterm=bold 
+hi TabLine         guibg=#1F222D guifg=#808080 cterm=bold 
 
-hi Normal          guifg=#F8F8F2 guibg=#1D1F21
+"hi Normal          guifg=#F8F8F2 guibg=#1D1F21
+hi Normal          guifg=#F8F8F2 guibg=#1F222D
+
 hi Comment         guifg=#7C7C7C
-hi CursorLine                    guibg=#293739
+hi CursorLine                    guibg=#293739 cterm=none
 hi CursorLineNr    guifg=#B6B7EB               gui=none
 hi CursorColumn                  guibg=#293739
 hi ColorColumn     guifg=#B62323 guibg=#232526
 hi LineNr          guifg=#465457 guibg=#232526
 hi NonText         guifg=#465457
 hi SpecialKey      guifg=#465457
+
+hi Member guifg=#99CC99
+hi Variable guifg=#ffffff
+hi Namespace guifg=#B6B7EB
+hi EnumConstant guifg=#7070F0
 
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
